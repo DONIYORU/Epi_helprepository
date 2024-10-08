@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:epi_help/screens/home_screen.dart';
 
 class Application extends StatelessWidget {
   const Application({super.key});
@@ -16,7 +17,7 @@ class Application extends StatelessWidget {
           useMaterial3: true, // Enable Material 3 for modern UI
           // Additional theme configurations can go here
         ),
-        home:,
+        home: HomeScreen(),
         debugShowCheckedModeBanner: false, // Hide the debug banner
       ),
     );
