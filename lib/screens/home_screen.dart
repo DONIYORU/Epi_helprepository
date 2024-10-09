@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
+class HomeScreen  extends StatefulWidget {
+  const HomeScreen ({super.key});
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(child:
-      Column(
+  State<HomeScreen > createState() => _HomeScreen State();
+}
 
-      )),
-    );
+class _HomeScreen State extends State<HomeScreen > {
+  @override
+  void initState() {
+    initialize();
+    super.initState();
+  }
+  initialize()async{
+    final client client = Client();
+
+  }
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
